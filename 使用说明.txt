@@ -14,3 +14,9 @@
 
 6. 查看后台状态
     浏览器输入：<IP>:<端口>， 例如： 192.168.0.103:8200
+
+
+关于自动挂载：
+编辑文件： /ets/fstab
+# <file system>     <mount point>   <type>          <options>           <dump>      <pass>
+  /dev/sda          /media/disk1    auto        nosuid,nodev,nofail     0           0
