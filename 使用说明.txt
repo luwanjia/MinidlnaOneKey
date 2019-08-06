@@ -1,0 +1,16 @@
+1. 保证操作系统正常安装， 网络连接正常
+
+2. 将install.sh和minidlna-1.2.1-1.x86_64.rpm两个文件复制到服务器上任意同级目录下
+
+3. 安装执行install.sh
+    # sh install.sh
+
+4. 配置多媒体文件路径
+    # vi /etc/minidlna.conf
+    将media_dir=/opt改成media_dir=/media/disk0, 或者改成自定义任意目录
+
+5. 配置文件修改完成后，重启minidland服务
+    # systemctl restart minidlnad
+
+6. 查看后台状态
+    浏览器输入：<IP>:<端口>， 例如： 192.168.0.103:8200
